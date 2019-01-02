@@ -12,8 +12,21 @@
 		D3CACADB21D4F7A000AC45FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CACAD921D4F7A000AC45FC /* Main.storyboard */; };
 		D3CACADD21D4F7A000AC45FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CACADC21D4F7A000AC45FC /* Assets.xcassets */; };
 		D3CACAE021D4F7A000AC45FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CACADE21D4F7A000AC45FC /* LaunchScreen.storyboard */; };
-		D3CACAE821D6441A00AC45FC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CACAE721D6441A00AC45FC /* Item.swift */; };
+		D3CACAEF21D77AA400AC45FC /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3CACAED21D77AA400AC45FC /* DataModel.xcdatamodeld */; };
+		D3CACB1421D8CF9A00AC45FC /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CACB1321D8CF9A00AC45FC /* CategoryTableViewController.swift */; };
+		D3CACB1C21DC914400AC45FC /* TodoeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CACB1B21DC914400AC45FC /* TodoeyUITests.swift */; };
+		D3CACB2421DC918E00AC45FC /* TestTodoey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CACB2321DC918E00AC45FC /* TestTodoey.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3CACB1E21DC914500AC45FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3CACACA21D4F7A000AC45FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3CACAD121D4F7A000AC45FC;
+			remoteInfo = Todoey;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D3CACAD221D4F7A000AC45FC /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,11 +36,23 @@
 		D3CACADC21D4F7A000AC45FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CACADF21D4F7A000AC45FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3CACAE121D4F7A000AC45FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3CACAE721D6441A00AC45FC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D3CACAEE21D77AA400AC45FC /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		D3CACB1321D8CF9A00AC45FC /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		D3CACB1921DC914400AC45FC /* TodoeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CACB1B21DC914400AC45FC /* TodoeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoeyUITests.swift; sourceTree = "<group>"; };
+		D3CACB1D21DC914500AC45FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3CACB2321DC918E00AC45FC /* TestTodoey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTodoey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D3CACACF21D4F7A000AC45FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CACB1621DC914400AC45FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				D3CACAD421D4F7A000AC45FC /* Todoey */,
+				D3CACB1A21DC914400AC45FC /* TodoeyUITests */,
 				D3CACAD321D4F7A000AC45FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				D3CACAD221D4F7A000AC45FC /* Todoey.app */,
+				D3CACB1921DC914400AC45FC /* TodoeyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,7 +96,7 @@
 		D3CACAE921D6444C00AC45FC /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				D3CACAE721D6441A00AC45FC /* Item.swift */,
+				D3CACAED21D77AA400AC45FC /* DataModel.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -77,6 +104,7 @@
 		D3CACAEA21D6445A00AC45FC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D3CACB1321D8CF9A00AC45FC /* CategoryTableViewController.swift */,
 				D3CACAD721D4F7A000AC45FC /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -99,6 +127,24 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		D3CACB1A21DC914400AC45FC /* TodoeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3CACB2521DC92E900AC45FC /* Tests */,
+				D3CACB1B21DC914400AC45FC /* TodoeyUITests.swift */,
+				D3CACB1D21DC914500AC45FC /* Info.plist */,
+			);
+			path = TodoeyUITests;
+			sourceTree = "<group>";
+		};
+		D3CACB2521DC92E900AC45FC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D3CACB2321DC918E00AC45FC /* TestTodoey.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +165,24 @@
 			productReference = D3CACAD221D4F7A000AC45FC /* Todoey.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D3CACB1821DC914400AC45FC /* TodoeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3CACB2021DC914500AC45FC /* Build configuration list for PBXNativeTarget "TodoeyUITests" */;
+			buildPhases = (
+				D3CACB1521DC914400AC45FC /* Sources */,
+				D3CACB1621DC914400AC45FC /* Frameworks */,
+				D3CACB1721DC914400AC45FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3CACB1F21DC914500AC45FC /* PBXTargetDependency */,
+			);
+			name = TodoeyUITests;
+			productName = TodoeyUITests;
+			productReference = D3CACB1921DC914400AC45FC /* TodoeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +195,10 @@
 				TargetAttributes = {
 					D3CACAD121D4F7A000AC45FC = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					D3CACB1821DC914400AC45FC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D3CACAD121D4F7A000AC45FC;
 					};
 				};
 			};
@@ -148,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				D3CACAD121D4F7A000AC45FC /* Todoey */,
+				D3CACB1821DC914400AC45FC /* TodoeyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +232,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3CACB1721DC914400AC45FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -171,12 +247,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3CACAD821D4F7A000AC45FC /* TodoListViewController.swift in Sources */,
-				D3CACAE821D6441A00AC45FC /* Item.swift in Sources */,
+				D3CACAEF21D77AA400AC45FC /* DataModel.xcdatamodeld in Sources */,
 				D3CACAD621D4F7A000AC45FC /* AppDelegate.swift in Sources */,
+				D3CACB1421D8CF9A00AC45FC /* CategoryTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CACB1521DC914400AC45FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CACB1C21DC914400AC45FC /* TodoeyUITests.swift in Sources */,
+				D3CACB2421DC918E00AC45FC /* TestTodoey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3CACB1F21DC914500AC45FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3CACAD121D4F7A000AC45FC /* Todoey */;
+			targetProxy = D3CACB1E21DC914500AC45FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D3CACAD921D4F7A000AC45FC /* Main.storyboard */ = {
@@ -350,6 +444,44 @@
 			};
 			name = Release;
 		};
+		D3CACB2121DC914500AC45FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9648967794;
+				INFOPLIST_FILE = TodoeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deloitte.reijer.TodoeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todoey;
+			};
+			name = Debug;
+		};
+		D3CACB2221DC914500AC45FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9648967794;
+				INFOPLIST_FILE = TodoeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deloitte.reijer.TodoeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todoey;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,7 +503,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D3CACB2021DC914500AC45FC /* Build configuration list for PBXNativeTarget "TodoeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CACB2121DC914500AC45FC /* Debug */,
+				D3CACB2221DC914500AC45FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3CACAED21D77AA400AC45FC /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3CACAEE21D77AA400AC45FC /* DataModel.xcdatamodel */,
+			);
+			currentVersion = D3CACAEE21D77AA400AC45FC /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D3CACACA21D4F7A000AC45FC /* Project object */;
 }
